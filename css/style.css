@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+}
+
+.gremio {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: 25vh;
+  font-size: 17px;
+}
+
+.gremio div {
+  height: 25vh;
+  width: 10vw;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  color: #fff;
+}
+
+.gremio div:nth-child(1),
+.gremio div:nth-child(5),
+.gremio div:nth-child(9) {
+  background-color: rgb(0, 195, 255);
+  flex-grow: 1;
+}
+
+.gremio div:nth-child(2),
+.gremio div:nth-child(4),
+.gremio div:nth-child(6),
+.gremio div:nth-child(8) {
+  background-color: #fff;
+  color: #000;
+  max-width: 70px;
+}
+
+.gremio div:nth-child(3),
+.gremio div:nth-child(7) {
+  background-color: #000;
+  min-width: 175px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.flex div {
+  margin: 2px;
+  display: flex;
+  max-width: 45vw;
+}
+
+.flex div div {
+  width: 25vw;
+  height: 40vh;
+}
+
+.flex div:nth-child(2) {
+  flex-direction: column;
+  max-height: 40vh;
+}
+
+.flex div:nth-child(2) div {
+  width: 45vw;
+  height: 40vh;
+}
+
+.red {
+  background-color: #f00;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.blue {
+  background-color: #00f;
+}
+
+.brasil {
+  height: 60vh;
+  background-color: rgb(2, 136, 2);
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.diamond-shape {
+  width: 90vh;
+  height: 90vh;
+  background-color: #ff0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  rotate: 45deg;
+  clip-path: polygon(100% -100%, 70% 70%, -100% 100%, 30% 30%);
+}
+
+.ball {
+  width: 30vh;
+  height: 30vh;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.label {
+  width: 30vh;
+  height: 5vh;
+  rotate: -52deg;
+  text-align: center;
+  color: rgb(2, 136, 2);
+  font-size: 1.5em;
+}
